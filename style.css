@@ -8,18 +8,27 @@
     background: linear-gradient(90deg, #00000000, #fff, #00000000);
     background-repeat: no-repeat;
     background-size: 80%;
-    animation: animate 3s linear infinite;
+    animation: animate 4s linear infinite;
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
   }
   
   @keyframes animate {
     0% {
       background-position: -500%;
     }
-    100% {
+    75% {
       background-position: 500%;
     }
+    100% {
+        background-position: 500%;
+      }
+  }
+
+  @keyframes showAfter {
+    to   { visibility: visible; }
   }
 
 
@@ -76,7 +85,8 @@
 #footer {
     position: absolute;
     bottom: 0;
-    /* align-items: center; */
+    animation: showAfter 0s 3s forwards;
+    visibility: hidden;
 }
 
 #header {
