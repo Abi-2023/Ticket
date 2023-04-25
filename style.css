@@ -109,14 +109,14 @@
 	 color: #fff;
 }
  #quote-box {
-	 border-radius: 3px;
+	 border-radius: 10px;
 	 position: relative;
      align-items: center;
 	 width: min(450px, 90vw);
 	 /* padding: 40px 50px; */
      margin: 20px;
 	 display: table;
-	 background-color: #dededef0;
+	 background-color: #dededec0;
 }
  #quote-box .quote-text {
 	 text-align: center;
@@ -345,8 +345,8 @@
     position: fixed;
     left: 50%;
     top: 50%;
-    width: 0.4vw;
-    height: 0.4vw;
+    width: 0.7vh;
+    height: 0.7vh;
     margin: -0.2vw 0 0 9.8vw;
     animation: ease 200s alternate infinite;
     pointer-events: none;
