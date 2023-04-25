@@ -38,11 +38,11 @@
     width: var(--size);
     height: var(--size);
     filter: blur(calc(var(--size) / 10));
-    background-image: linear-gradient(#37eba9, #5b37eb);
+    background-image: linear-gradient(#ebbe37, #e40808);
     animation: rotate var(--speed) var(--easing) alternate infinite;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
-@media (min-width: 720px) {
+@media (min-width: 320px) {
     .gradient {
         --size: 400px;
    }
@@ -102,14 +102,16 @@
 	 border-radius: 3px;
 	 position: relative;
      align-items: center;
-	 width: 450px;
-	 padding: 40px 50px;
+	 width: min(450px, 90vw);
+	 /* padding: 40px 50px; */
+     margin: 20px;
 	 display: table;
 	 background-color: #dededef0;
 }
  #quote-box .quote-text {
 	 text-align: center;
-	 width: 450px;
+	 width: min(450px, 80vw);
+     margin: 20px;
 	 height: auto;
 	 clear: both;
 	 font-weight: 500;
@@ -120,7 +122,8 @@
 	 margin-right: 0.4em;
 }
  #quote-box .quote-author {
-	 width: 450px;
+    width: min(450px, 80vw);
+    margin: 20px;
 	 height: auto;
 	 clear: both;
 	 padding-top: 20px;
